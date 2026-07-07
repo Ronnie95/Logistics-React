@@ -161,7 +161,7 @@ function TruckCreate() {
                             variant="primary" 
                             type="submit"
                         >
-                            Create Customer
+                            Create Truck
                         </Button>
 
 
