@@ -157,4 +157,4 @@ function TrailerEdit() {
     }
     }
 
-    export default TruckEdit;
+    export default TrailerEdit;

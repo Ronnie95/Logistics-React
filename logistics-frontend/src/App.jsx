@@ -9,6 +9,11 @@ import Trucks from "./components/Trucks"
 import TruckCreate from "./components/TrucksCreate"
 import TruckEdit from "./components/TrucksEdit"
 import TruckDetail from "./components/TruckShow"
+import TrailerCreate from "./components/TrailersCreate"
+import Trailers from "./components/Trailers"
+import TrailerDetail from "./components/TrailerShow"
+import TrailerCreate from "./components/TrailersCreate"
+import TrailerEdit from "./components/TrailersEdit"
 
 
 function App() {
@@ -37,6 +42,14 @@ function App() {
       <Route path="/trucks/:id" element={<TruckDetail />} />
 
       <Route path="/trucks/:id/edit" element={<TruckEdit />} />
+
+      <Route path="/trailers" element={<Trailers />} />
+
+      <Route path="/trailers/new" element={<TrailerCreate />} />
+
+      <Route path="/trailers/:id" element={<TrailerDetail />} />
+
+      <Route path="/trailers/:id/edit" element={<TrailerEdit />} />
 
       </Routes>
 
