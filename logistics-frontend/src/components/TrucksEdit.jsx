@@ -66,7 +66,7 @@ function TruckEdit() {
         try {
 
             await api.put(
-                `truks/${id}/`,
+                `trucks/${id}/`,
                 truckForm
             );
 
