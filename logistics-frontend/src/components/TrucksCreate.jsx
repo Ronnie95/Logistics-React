@@ -179,4 +179,4 @@ function TruckCreate() {
 }
 
 
-export default CustomersCreate;
+export default TruckCreate;

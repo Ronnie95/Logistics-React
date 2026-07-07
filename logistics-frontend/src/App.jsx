@@ -5,6 +5,10 @@ import Customers from "./components/Customers"
 import CustomerDetail from "./components/CustomersShow"
 import CustomerEdit from "./components/CustomersEdit"
 import CustomersCreate from "./components/CustomersCreate"
+import Trucks from "./components/Trucks"
+import TruckCreate from "./components/TrucksCreate"
+import TruckEdit from "./components/TrucksEdit"
+
 
 function App() {
   return (

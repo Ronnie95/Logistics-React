@@ -213,4 +213,4 @@ function TruckEdit() {
     }
     }
 
-    export default CustomerEdit;
+    export default TruckEdit;
