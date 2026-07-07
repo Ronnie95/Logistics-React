@@ -115,4 +115,4 @@ function Customers() {
 
 }
 
-export default Comments;
+export default Customers;
