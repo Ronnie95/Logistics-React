@@ -14,6 +14,10 @@ import Trailers from "./components/Trailers"
 import TrailerDetail from "./components/TrailerShow"
 import TrailerCreate from "./components/TrailersCreate"
 import TrailerEdit from "./components/TrailersEdit"
+import Route from "./components/Route"
+import RouteCreate from "./components/RoutesCreate"
+import RouteDetail from "./components/RoutesShow"
+import RoutesEdit from "./components/RoutesEdit"
 
 
 function App() {
@@ -50,6 +54,14 @@ function App() {
       <Route path="/trailers/:id" element={<TrailerDetail />} />
 
       <Route path="/trailers/:id/edit" element={<TrailerEdit />} />
+
+      <Route path="/routes" element={<Route />} />
+
+      <Route path="/routes/new" element={<RouteCreate />} />
+
+      <Route path="/routes/:id" element={<RouteDetail />} />
+
+      <Route path="/routes/:id/edit" element={<RoutesEdit />} />
 
       </Routes>
 
