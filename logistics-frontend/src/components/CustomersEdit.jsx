@@ -26,7 +26,7 @@ function CustomerEdit() {
 
                 const response = await api.get(`customers/${id}/`);
 
-                setProjectForm(response.data);
+                setCustomerForm(response.data);
 
             } catch (error) {
 
@@ -45,7 +45,7 @@ function CustomerEdit() {
 
     const handleChange = (e) => {
 
-        setProjectForm({
+        setCustomerForm({
 
             ...customerForm,
 
