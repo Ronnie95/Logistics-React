@@ -18,6 +18,10 @@ import Route from "./components/Route"
 import RouteCreate from "./components/RoutesCreate"
 import RouteDetail from "./components/RoutesShow"
 import RoutesEdit from "./components/RoutesEdit"
+import PreTrips from "./components/Pretrip"
+import PreTripCreate from "./components/PretripCreate"
+import PreTripDetail from "./components/PretripShow"
+import PreTripEdit from "./components/Pretripedit"
 
 
 function App() {
@@ -62,6 +66,14 @@ function App() {
       <Route path="/routes/:id" element={<RouteDetail />} />
 
       <Route path="/routes/:id/edit" element={<RoutesEdit />} />
+
+      <Route path="/pretrips" element={<PreTrips />} />
+
+      <Route path="/pretrips/new" element={<PreTripCreate />} />
+
+      <Route path="/pretrips/:id" element={<PreTripDetail />} />
+
+      <Route path="/pretrips/:id/edit" element={<PreTripEdit />} />
 
       </Routes>
 
