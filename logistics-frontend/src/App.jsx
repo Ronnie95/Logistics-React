@@ -22,6 +22,10 @@ import PreTrips from "./components/Pretrip"
 import PreTripCreate from "./components/PretripCreate"
 import PreTripDetail from "./components/PretripShow"
 import PreTripEdit from "./components/Pretripedit"
+import MaintenanceRecordCreate from "./components/MaintenanceRecordCreate"
+import MaintenanceRecordDetail from "./components/MaintenanceRecordShow"
+import MaintenanceRecordEdit from "./components/MaintenanceRecordEdit"
+import MaintenanceRecords from "./components/MaintenanceRecord"
 
 
 function App() {
@@ -74,6 +78,15 @@ function App() {
       <Route path="/pretrips/:id" element={<PreTripDetail />} />
 
       <Route path="/pretrips/:id/edit" element={<PreTripEdit />} />
+
+      <Route path="/maintenancerecords" element={<MaintenanceRecords />} />
+
+      <Route path="/maintenancerecords/new" element={<MaintenanceRecordCreate />} />
+
+      <Route path="/maintenancerecords/:id" element={<MaintenanceRecordDetail />} />
+
+      <Route path="/maintenancerecords/:id/edit" element={<MaintenanceRecordEdit />} />
+
 
       </Routes>
 
