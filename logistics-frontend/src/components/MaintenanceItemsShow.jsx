@@ -132,4 +132,4 @@ function MaintenanceItemDetail() {
 }
 
 
-export default MaintenanceRecordDetail;
+export default MaintenanceItemDetail;

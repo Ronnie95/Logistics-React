@@ -26,6 +26,11 @@ import MaintenanceRecordCreate from "./components/MaintenanceRecordCreate"
 import MaintenanceRecordDetail from "./components/MaintenanceRecordShow"
 import MaintenanceRecordEdit from "./components/MaintenanceRecordEdit"
 import MaintenanceRecords from "./components/MaintenanceRecord"
+import MaintenanceItemCreate from "./components/MaintenanceItemsCreate"
+import MaintenanceItemEdit from "./components/MaintenanceItemsEdit"
+import MaintenanceItems from "./components/MaintenanceItems"
+import MaintenanceItemDetail from "./components/MaintenanceItemsShow"
+
 
 
 function App() {
@@ -86,6 +91,14 @@ function App() {
       <Route path="/maintenancerecords/:id" element={<MaintenanceRecordDetail />} />
 
       <Route path="/maintenancerecords/:id/edit" element={<MaintenanceRecordEdit />} />
+
+      <Route path="/maintenanceitems" element={<MaintenanceItems />} />
+
+      <Route path="/maintenanceitems/new" element={<MaintenanceItemCreate />} />
+
+      <Route path="/maintenanceitems/:id" element={<MaintenanceItemDetail />} />
+
+      <Route path="/maintenanceitems/:id/edit" element={<MaintenanceItemEdit />} />
 
 
       </Routes>
