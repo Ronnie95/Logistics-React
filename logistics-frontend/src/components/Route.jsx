@@ -17,7 +17,7 @@ function Route() {
 
                 const response = await api.get("routes/");
 
-                setTickets(response.data);
+                setRoutes(response.data);
 
             } catch (err) {
 
@@ -33,7 +33,7 @@ function Route() {
 
         };
 
-        getTickets();
+        getRoutes();
 
     }, []);
 
