@@ -11,7 +11,7 @@ function HosLogsCreate() {
     const [hosForm, setHosForm] = useState({
         hos_type: "",
         start_time: "",
-        end_time: "",
+        end_time: ""
         
     });
 
