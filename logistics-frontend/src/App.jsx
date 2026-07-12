@@ -30,7 +30,10 @@ import MaintenanceItemCreate from "./components/MaintenanceItemsCreate"
 import MaintenanceItemEdit from "./components/MaintenanceItemsEdit"
 import MaintenanceItems from "./components/MaintenanceItems"
 import MaintenanceItemDetail from "./components/MaintenanceItemsShow"
-
+import HosDetail from "./components/HosLogsShow"
+import HosLogs from "./components/HosLogs"
+import HosLogsCreate from "./components/HosLogsCreate"
+import HosLogsEdit from "./components/HosLogsEdit"
 
 
 function App() {
@@ -99,6 +102,14 @@ function App() {
       <Route path="/maintenanceitems/:id" element={<MaintenanceItemDetail />} />
 
       <Route path="/maintenanceitems/:id/edit" element={<MaintenanceItemEdit />} />
+
+      <Route path="/hoslogs" element={<HosLogs />} />
+
+      <Route path="/hoslogs/new" element={<HosLogsCreate />} />
+
+      <Route path="/hoslogs/:id" element={<HosDetail />} />
+
+      <Route path="/hoslogs/:id/edit" element={<HosLogsEdit />} />
 
 
       </Routes>

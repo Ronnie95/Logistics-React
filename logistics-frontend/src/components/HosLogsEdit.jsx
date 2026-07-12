@@ -162,4 +162,4 @@ function HosLogsEdit() {
     }
     }
 
-    export default CustomerEdit;
+    export default HosLogsEdit;
