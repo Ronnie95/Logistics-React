@@ -34,7 +34,10 @@ import HosDetail from "./components/HosLogsShow"
 import HosLogs from "./components/HosLogs"
 import HosLogsCreate from "./components/HosLogsCreate"
 import HosLogsEdit from "./components/HosLogsEdit"
-
+import Deliveries from "./components/Deliveries"
+import DeliveryDetail from "./components/DeliveriesShow"
+import DeliveryEdit from "./components/DeliveriesEdit"
+import DeliveriesCreate from "./components/DeliveriesCreate"
 
 function App() {
   return (
@@ -111,6 +114,13 @@ function App() {
 
       <Route path="/hoslogs/:id/edit" element={<HosLogsEdit />} />
 
+      <Route path="/deliveries" element={<Deliveries />} />
+
+      <Route path="/deliveries/new" element={<DeliveriesCreate />} />
+
+      <Route path="/deliveries/:id" element={<DeliveryDetail />} />
+
+      <Route path="/deliveries/:id/edit" element={<DeliveryEdit />} />
 
       </Routes>
 

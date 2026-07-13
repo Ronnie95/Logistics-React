@@ -241,4 +241,4 @@ function DeliveriesCreate() {
 }
 
 
-export default RouteCreate;
+export default DeliveriesCreate;
