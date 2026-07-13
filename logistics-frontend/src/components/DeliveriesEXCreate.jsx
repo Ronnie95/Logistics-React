@@ -94,24 +94,8 @@ function DeliveryExCreate() {
 
                             <Form.Control
                                 type="text"
-                                name="routes"
-                                value={routeForm.route_name}
-                                onChange={handleChange}
-                                required
-                            />
-
-                        </Form.Group>
-
-                        <Form.Group className="mb-3">
-
-                            <Form.Label>
-                                 Date
-                            </Form.Label>
-
-                            <Form.Control
-                                type="date"
-                                name="date"
-                                value={routeForm.route_date}
+                                name="notes"
+                                value={deliveryExForm.notes}
                                 onChange={handleChange}
                                 required
                             />
@@ -125,7 +109,7 @@ function DeliveryExCreate() {
                             </Form.Label>
 
                             <Form.Select
-                                name="trucks"
+                                name="exception_type"
                                 value={deliveryExForm.exception_type}
                                 onChange={handleChange}
                                 required
