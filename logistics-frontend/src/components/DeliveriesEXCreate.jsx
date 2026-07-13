@@ -187,4 +187,4 @@ function DeliveryExCreate() {
 }
 
 
-export default DeliveriesCreate;
+export default DeliveryExCreate;

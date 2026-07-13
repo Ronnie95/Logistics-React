@@ -38,6 +38,11 @@ import Deliveries from "./components/Deliveries"
 import DeliveryDetail from "./components/DeliveriesShow"
 import DeliveryEdit from "./components/DeliveriesEdit"
 import DeliveriesCreate from "./components/DeliveriesCreate"
+import DeliveryEx from "./components/DeliveriesEX"
+import DeliveryExDetail from "./components/DeliveriesEXShow"
+import DeliveryExEdit from "./components/DeliveriesEXEdit"
+import DeliveryExCreate from "./components/DeliveriesEXCreate"
+
 
 function App() {
   return (
@@ -121,6 +126,15 @@ function App() {
       <Route path="/deliveries/:id" element={<DeliveryDetail />} />
 
       <Route path="/deliveries/:id/edit" element={<DeliveryEdit />} />
+
+      <Route path="/deliveryexceptions" element={<DeliveryEx />} />
+
+      <Route path="/deliveryexceptions/new" element={<DeliveryExCreate />} />
+
+      <Route path="/deliveryexceptions/:id" element={<DeliveryExDetail />} />
+
+      <Route path="/deliveryexceptions/:id/edit" element={<DeliveryExDetail />} />
+
 
       </Routes>
 
