@@ -38,8 +38,8 @@ function RouteStart() {
     }, []);
 
     if (loading) {
-        return <h3>Loading Routes...</h3>;
-    }
+        return <h3>Loading Routes...</h3>
+    };
 
     if (error) {
         return <h3>{error}</h3>;

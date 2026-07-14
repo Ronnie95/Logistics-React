@@ -8,7 +8,7 @@ function Register() {
         username: "",
         email: "",
         password: "",
-        role: "",
+        role: ""
     });
 
     const navigate = useNavigate();
@@ -25,35 +25,31 @@ function Register() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
+    
         try {
             const response = await fetch(BASE_URL, {
                 method: "POST",
                 headers: {
-                    "Content-Type": "application/json"
+                    "Content-Type": "application/json",
                 },
-                body: JSON.stringify(registerForm)
+                body: JSON.stringify(registerForm),
             });
-
-
-            if (!response.ok) {
-                throw new Error("Registration failed");
-            }
-
-
+    
             const data = await response.json();
-
-            console.log(data);
-
-            // Send user to login after successful registration
+    
+            console.log("Response:", data);
+    
+            if (!response.ok) {
+                console.error("Validation errors:", data);
+                return;
+            }
+    
             navigate("/login");
-
-
+    
         } catch (error) {
-            console.log(error.message);
+            console.error(error);
         }
     };
-
 
     return (
         <Form onSubmit={handleSubmit}>
