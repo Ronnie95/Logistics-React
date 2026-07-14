@@ -13,7 +13,7 @@ import TrailerCreate from "./components/TrailersCreate"
 import Trailers from "./components/Trailers"
 import TrailerDetail from "./components/TrailerShow"
 import TrailerEdit from "./components/TrailersEdit"
-import Route from "./components/Route"
+import RouteStart from "./components/Route.Startjsx"
 import RouteCreate from "./components/RoutesCreate"
 import RouteDetail from "./components/RoutesShow"
 import RoutesEdit from "./components/RoutesEdit"
@@ -78,7 +78,7 @@ function App() {
 
       <Route path="/trailers/:id/edit" element={<TrailerEdit />} />
 
-      <Route path="/routes" element={<Route />} />
+      <Route path="/routes" element={<RouteStart />} />
 
       <Route path="/routes/new" element={<RouteCreate />} />
 
@@ -132,7 +132,7 @@ function App() {
 
       <Route path="/deliveryexceptions/:id" element={<DeliveryExDetail />} />
 
-      <Route path="/deliveryexceptions/:id/edit" element={<DeliveryExDetail />} />
+      <Route path="/deliveryexceptions/:id/edit" element={<DeliveryExEdit />} />
 
 
       </Routes>

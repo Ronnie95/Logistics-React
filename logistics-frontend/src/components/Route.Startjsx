@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Card, Button } from "react-bootstrap";
 import api from "../services/api";
 
-function Route() {
+function RouteStart() {
 
     const [routes, setRoutes] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -107,4 +107,4 @@ function Route() {
 
 }
 
-export default Route;
+export default RouteStart;
