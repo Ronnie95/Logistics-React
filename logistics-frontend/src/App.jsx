@@ -41,18 +41,21 @@ import DeliveryEx from "./components/DeliveriesEX"
 import DeliveryExDetail from "./components/DeliveriesEXShow"
 import DeliveryExEdit from "./components/DeliveriesEXEdit"
 import DeliveryExCreate from "./components/DeliveriesEXCreate"
+import NavBar from "./components/NavBar"
 
 
 function App() {
   return (
     <div>
 
-
       <Routes>
 
       <Route path="/register" element={<Register />} />
 
       <Route path="/login" element={<Login />} />
+      {<NavBar />}
+     
+     
 
       <Route path="/customers" element={<Customers />} />
 
