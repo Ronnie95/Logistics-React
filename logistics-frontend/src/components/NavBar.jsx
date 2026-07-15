@@ -30,6 +30,15 @@ function NavBar() {
                             Maintenance
                         </Nav.Link>
 
+                        <Nav.Link as={Link} to="/customers">
+                            Customers
+                        </Nav.Link>
+
+
+                        <Nav.Link as={Link} to="/drivers">
+                            Driver Portal
+                        </Nav.Link>
+
                     </Nav>
 
                 </Navbar.Collapse>
